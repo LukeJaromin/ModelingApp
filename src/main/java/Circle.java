@@ -1,11 +1,9 @@
-public record Circle(Point p, double rad) implements Shape{
+public record Circle(Point p, double rad) implements Shape {
 
-    public Circle(Point p, double rad){
-        if(rad < 0){
+    public Circle {
+        if (rad < 0) {
             throw new IllegalArgumentException("Negatives not allowed");
         }
-        this.p = p;
-        this.rad = rad;
     }
 
     @Override

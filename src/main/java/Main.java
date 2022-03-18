@@ -2,13 +2,15 @@ public class Main {
     public static void main(String[] args) {
 
         var point = new Point(1.0,1.0);
+        var pointX = new Point(2.0, 2.0);
+        var pointY = new Point(4.0, 4.0);
         point.distance(point);
 
         var circle = new Circle(point, 2.0);
         circle.getArea();
         circle.getDiameter(circle);
 
-       var section = new Section(1.24,1.24);
+       var section = new Section(pointX, pointY);
        section.getArea();
        section.getDiameter(section);
 

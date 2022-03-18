@@ -5,8 +5,8 @@ import lombok.ToString;
 @AllArgsConstructor
 public non-sealed class Section extends Polygon{
 
-    double x;
-    double y;
+    private Point pointX = new Point(1.0, 1.0);
+    private  Point pointY = new Point(4.0, 4.0);
 
     @Override
     public String getArea() {
